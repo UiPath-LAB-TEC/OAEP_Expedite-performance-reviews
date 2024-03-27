@@ -1,0 +1,79 @@
+{
+  "name": "EmployeeReviewAppAssist",
+  "projectId": "0b7a975d-92b4-4a11-93ec-79b26f6f76a1",
+  "description": "Build a process that supports real-time communication with Apps",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.MicrosoftAzureOpenAI.IntegrationService.Activities": "[7.1.0]",
+    "UiPath.System.Activities": "[23.4.2]",
+    "UiPath.WorkflowEvents.Activities": "[2.0.0]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.10.0.0",
+  "projectVersion": "1.0.8",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": false,
+    "isAttended": false,
+    "requiresUserInteraction": false,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "11219700-f517-4898-a986-e5a57d019396",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "invokedWorkflows\\example1.xaml",
+      "uniqueId": "287de82e-4c4c-4f90-9b3c-ede854e8c3d1",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "EnchanceInputUsingAI.xaml",
+      "uniqueId": "2e36f01d-02d1-4e1c-846b-1692bb0ee023",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "StopRobot.xaml",
+      "uniqueId": "a8a6d3a6-2bb4-43b8-b4dd-1750d81d9ae1",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

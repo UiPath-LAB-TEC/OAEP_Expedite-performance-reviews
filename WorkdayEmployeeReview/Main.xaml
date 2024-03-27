@@ -1,0 +1,259 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GetTasks" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1118,2228" sap2010:WorkflowViewState.IdRef="GetTasks_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upama="clr-namespace:UiPath.Persistence.Activities.Model.Apps;assembly=UiPath.Persistence.Activities" xmlns:upau="clr-namespace:UiPath.Persistence.Activities.UserAction;assembly=UiPath.Persistence.Activities" xmlns:w="clr-namespace:WorkdayEmployeeReview;assembly=DataService.WorkdayEmployeeReview" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Persistence.Activities.Model.Apps</x:String>
+      <x:String>UiPath.Persistence.Activities.Model.Task</x:String>
+      <x:String>UiPath.Persistence.Activities.UserAction</x:String>
+      <x:String>UiPath.Persistence.Activities.BaseTask</x:String>
+      <x:String>UiPath.Persistence.Activities</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.DataService.Activities</x:String>
+      <x:String>UiPath.DataService.Definition</x:String>
+      <x:String>UiPath.DataService.Activities.Models</x:String>
+      <x:String>WorkdayEmployeeReview</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Activities.Core</AssemblyReference>
+      <AssemblyReference>UiPath.DataService.Definition</AssemblyReference>
+      <AssemblyReference>DataService.WorkdayEmployeeReview</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="GetTasks" sap:VirtualizedContainerService.HintSize="584,2163" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(x:String)" Name="Tasks" />
+      <Variable x:TypeArguments="scg:List(upau:UserActionData)" Default="[new List(of UserActionData)]" Name="AppTaskCollection" />
+      <Variable x:TypeArguments="x:String" Name="ActionTaken" />
+      <Variable x:TypeArguments="upau:UserActionData" Name="TaskDataObj" />
+      <Variable x:TypeArguments="x:String" Name="improvement" />
+      <Variable x:TypeArguments="x:String" Name="ImprovementTeam" />
+      <Variable x:TypeArguments="x:String" Name="Strength" />
+      <Variable x:TypeArguments="x:String" Name="FeedbackName" />
+      <Variable x:TypeArguments="upau:UserActionData" Name="CreatedAppTask" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FetchTasks.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="522,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="FetchTasks.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <OutArgument x:TypeArguments="scg:List(x:String)" x:Key="out_Tasks">[Tasks]</OutArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="522,955" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Tasks]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,769" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="w:OAEPEmployeeFeedback" Name="CurrentRecord" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <upau:CreateUserAction ExternalTag="{x:Null}" Labels="{x:Null}" TaskCatalog="{x:Null}" TimeoutMs="{x:Null}" DisplayName="Create App Task" EnforcePropertyRefresh="False" sap:VirtualizedContainerService.HintSize="334,500" sap2010:WorkflowViewState.IdRef="CreateUserAction_4" TaskOutput="[CreatedAppTask]" TaskPriority="Medium" TaskTitle="[currentItem]">
+              <upau:CreateUserAction.AppActionData>
+                <InArgument x:TypeArguments="x:String" x:Key="entity_record_id">123</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="feedback_name">[currentItem]</InArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="improvement_area">[improvement]</InOutArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="improvement_team">[ImprovementTeam]</InOutArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="strength">[Strength]</InOutArgument>
+              </upau:CreateUserAction.AppActionData>
+              <upau:CreateUserAction.AppActionPropertiesMetadata>
+                <upama:SchemaPropertiesMetadata Format="{x:Null}" x:Key="entity_record_id" />
+                <upama:SchemaPropertiesMetadata Format="{x:Null}" x:Key="feedback_name" />
+                <upama:SchemaPropertiesMetadata Format="{x:Null}" x:Key="improvement_area" />
+                <upama:SchemaPropertiesMetadata Format="{x:Null}" x:Key="improvement_team" />
+                <upama:SchemaPropertiesMetadata Format="{x:Null}" x:Key="strength" />
+              </upau:CreateUserAction.AppActionPropertiesMetadata>
+              <upau:CreateUserAction.CurrentAppTaskState>
+                <upama:AppTaskState AppId="ID252a7702022a450ba8b3d8ec4c051ca3" AppName="Employee Feedback Enhancer App" AppVersion="10" TaskDefinitionId="10" TaskDefinitionKey="d57f2c38-1189-4fc4-b3c0-741b3e25886b" TaskDefinitionName="Employee Performance Review Task" TaskDefinitionVersion="4" />
+              </upau:CreateUserAction.CurrentAppTaskState>
+              <upau:CreateUserAction.State>
+                <upama:RecordDynamicActionPropertiesState>
+                  <upama:RecordDynamicActionPropertiesState.SelectedFields>
+                    <scg:List x:TypeArguments="upama:DynamicActionDefinitionSchemaField" Capacity="5">
+                      <upama:DynamicActionDefinitionSchemaField PropertyFormat="{x:Null}" Direction="In" IsRequired="False" Name="feedback_name" PropertyType="string">
+                        <upama:DynamicActionDefinitionSchemaField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:String">[currentItem]</InArgument>
+                        </upama:DynamicActionDefinitionSchemaField.ArgumentValue>
+                      </upama:DynamicActionDefinitionSchemaField>
+                      <upama:DynamicActionDefinitionSchemaField PropertyFormat="{x:Null}" Direction="In" IsRequired="False" Name="entity_record_id" PropertyType="string">
+                        <upama:DynamicActionDefinitionSchemaField.ArgumentValue>
+                          <InArgument x:TypeArguments="x:String">123</InArgument>
+                        </upama:DynamicActionDefinitionSchemaField.ArgumentValue>
+                      </upama:DynamicActionDefinitionSchemaField>
+                      <upama:DynamicActionDefinitionSchemaField PropertyFormat="{x:Null}" Direction="InOut" IsRequired="False" Name="improvement_team" PropertyType="string">
+                        <upama:DynamicActionDefinitionSchemaField.ArgumentValue>
+                          <InOutArgument x:TypeArguments="x:String">[ImprovementTeam]</InOutArgument>
+                        </upama:DynamicActionDefinitionSchemaField.ArgumentValue>
+                      </upama:DynamicActionDefinitionSchemaField>
+                      <upama:DynamicActionDefinitionSchemaField PropertyFormat="{x:Null}" Direction="InOut" IsRequired="False" Name="strength" PropertyType="string">
+                        <upama:DynamicActionDefinitionSchemaField.ArgumentValue>
+                          <InOutArgument x:TypeArguments="x:String">[Strength]</InOutArgument>
+                        </upama:DynamicActionDefinitionSchemaField.ArgumentValue>
+                      </upama:DynamicActionDefinitionSchemaField>
+                      <upama:DynamicActionDefinitionSchemaField PropertyFormat="{x:Null}" Direction="InOut" IsRequired="False" Name="improvement_area" PropertyType="string">
+                        <upama:DynamicActionDefinitionSchemaField.ArgumentValue>
+                          <InOutArgument x:TypeArguments="x:String">[improvement]</InOutArgument>
+                        </upama:DynamicActionDefinitionSchemaField.ArgumentValue>
+                      </upama:DynamicActionDefinitionSchemaField>
+                    </scg:List>
+                  </upama:RecordDynamicActionPropertiesState.SelectedFields>
+                </upama:RecordDynamicActionPropertiesState>
+              </upau:CreateUserAction.State>
+            </upau:CreateUserAction>
+            <uasc:AppendItemToCollection x:TypeArguments="upau:UserActionData" Collection="[AppTaskCollection]" DisplayName="Append Items to Collection" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_1">
+              <uasc:AppendItemToCollection.Items>
+                <scg:List x:TypeArguments="InArgument(upau:UserActionData)" Capacity="4">
+                  <InArgument x:TypeArguments="upau:UserActionData">[CreatedAppTask]</InArgument>
+                </scg:List>
+              </uasc:AppendItemToCollection.Items>
+            </uasc:AppendItemToCollection>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <ParallelForEach x:TypeArguments="upau:UserActionData" DisplayName="Parallel For Each" sap:VirtualizedContainerService.HintSize="522,904" sap2010:WorkflowViewState.IdRef="ParallelForEach`1_3" Values="[AppTaskCollection]">
+      <ActivityAction x:TypeArguments="upau:UserActionData">
+        <ActivityAction.Argument>
+          <DelegateInArgument x:TypeArguments="upau:UserActionData" Name="item" />
+        </ActivityAction.Argument>
+        <Sequence sap:VirtualizedContainerService.HintSize="472,754" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <upau:WaitForUserActionAndResume StatusMessage="{x:Null}" TimeoutMs="{x:Null}" WaitItemDataObject="{x:Null}" DisplayName="Wait For App Task and Resume" sap:VirtualizedContainerService.HintSize="410,90" sap2010:WorkflowViewState.IdRef="WaitForUserActionAndResume_1" TaskAction="[ActionTaken]" TaskInput="[item]" TaskOutput="[TaskDataObj]" />
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="410,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[TaskDataObj.GetDataJsonObject.GetValue(&quot;entity_record_id&quot;).ToString]" />
+          <If Condition="[ActionTaken.Equals(&quot;complete&quot;)]" sap:VirtualizedContainerService.HintSize="410,383" sap2010:WorkflowViewState.IdRef="If_1">
+            <If.Then>
+              <Sequence DisplayName="" sap:VirtualizedContainerService.HintSize="376,201" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FillTask.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" LogEntry="WithArguments" LogExit="WithArguments" UnSafe="False" WorkflowFileName="FillTask.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_FeedbackName">[TaskDataObj.GetDataJsonObject.GetValue("feedback_name").ToString]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_ImprovementTeam">[ImprovementTeam]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Strength">[Strength]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_ImprovementArea">[improvement]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence sap:VirtualizedContainerService.HintSize="300,80" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </ActivityAction>
+    </ParallelForEach>
+  </Sequence>
+</Activity>
